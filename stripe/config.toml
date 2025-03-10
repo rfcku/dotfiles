@@ -1,0 +1,13 @@
+color = ''
+project-name = 'default'
+[default]
+account_id = 'acct_1MSSnXE5rA3ihvG4'
+device_name = 'rfcku.local'
+display_name = 'QArtCodes'
+live_mode_api_key = 'rk_live_***********************************************************************************************z7Db'
+live_mode_key_expires_at = '2025-01-18'
+live_mode_pub_key = 'pk_live_51MSSnXE5rA3ihvG4CUtu9KmhnBIpr2kDoipcAZ6YQMTkOdfyLLDQDnTykjo7kutrQFWcVDqYbf6PBNfGDyL2kps500T2tzldHC'
+test_mode_api_key = 'rk_test_51MSSnXE5rA3ihvG4PPcDYTOrcKrb2T1l1r5zZKPfSAjsY1PkWlui3aRZuxEAmJiU0nUM9z5gy7sY5MZbbQ54aXqH0005MNmCNU'
+test_mode_key_expires_at = '2025-01-18'
+test_mode_pub_key = 'pk_test_51MSSnXE5rA3ihvG4fcyVLkMpTma2E6p41EnxyzqDRe9psxgHkOsYsZALYM5GkEscGymaRL24PvkvenAWkoxkf4bk00xFgLuqEg'
+
