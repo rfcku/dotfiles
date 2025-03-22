@@ -34,16 +34,16 @@ return {
 	-- 	end,
 	-- },
 	-- { "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, priority = 1000 },
-	{
-		"navarasu/onedark.nvim",
-		options = {
-			theme = "onedark",
-		},
-		style = "darker",
-		config = function()
-			vim.cmd("colorscheme onedark")
-		end,
-	},
+	-- {
+	-- 	"navarasu/onedark.nvim",
+	-- 	options = {
+	-- 		theme = "onedark",
+	-- 	},
+	-- 	style = "darker",
+	-- 	config = function()
+	-- 		vim.cmd("colorscheme onedark")
+	-- 	end,
+	-- },
 	-- { -- You can easily change to a different colorscheme.
 	-- 	-- Change the name of the colorscheme plugin below, and then
 	-- 	-- change the command in the config to whatever the name of that colorscheme is.
