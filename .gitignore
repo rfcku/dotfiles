@@ -4,3 +4,4 @@ node_modules
 argocd
 raycast
 raycast/*
+./raycast
