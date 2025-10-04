@@ -3,6 +3,7 @@ require("rfcku.lazy_init")
 require("rfcku.lsp")
 require("rfcku.harpoon")
 require("rfcku.remap")
+require("rfcku.motions")
 
 vim.cmd.colorscheme = "catppuccin"
 -- require("onedark").setup({

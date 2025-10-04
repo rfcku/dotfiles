@@ -35,8 +35,35 @@ vim.keymap.set("n", "<C-p>", ":e#<CR>")
 vim.keymap.set("n", "<Esc>", "<Esc>")
 
 -- Move cursor to the first caracter of the paragraph
-vim.keymap.set("n", "[", "^")
-vim.keymap.set("n", "]", "$")
+-- vim.keymap.set("n", "}", function()
+-- 	vim.fn.search("\\S", "W")
+-- end, { noremap = true })
 
-vim.keymap.set("n", "}", "/^\\s*$\\n\\zs\\S<CR>", { noremap = true, silent = true })
-vim.keymap.set("n", "{", "?\\n\\zs\\S<CR>", { noremap = true, silent = true })
+-- open lazygit
+vim.keymap.set("n", "<leader>g", ":LazyGit<CR>")
+
+-- vim.keymap.set("n", "}", "/^\\s*$\\n\\zs\\S<CR>", { noremap = true, silent = true })
+-- vim.keymap.set("n", "{", "?\\n\\zs\\S<CR>", { noremap = true, silent = true })
+--
+-- Folding keymaps
+vim.keymap.set("n", "za", "za") -- Toggle fold at cursor
+vim.keymap.set("n", "zc", "zc") -- Close fold at cursor
+vim.keymap.set("n", "zo", "zo") -- Open fold at cursor
+vim.keymap.set("n", "zM", "zM") -- Close all folds
+vim.keymap.set("n", "zR", "zR") -- Open all folds
+vim.keymap.set("n", "zj", "zj") -- Move to next fold
+vim.keymap.set("n", "zk", "zk") -- Move to previous fold
+
+vim.keymap.set("n", "fp", function()
+	vim.fn.search("(", "b")
+end, {})
+
+-- Better indenting
+vim.keymap.set("v", "<", "<gv")
+vim.keymap.set("v", ">", ">gv")
+
+-- Swap j and k keys for up/down movement
+-- Remap 'j' to go UP
+vim.keymap.set({ "n", "v" }, "j", "k", { noremap = true, desc = "Move cursor up" })
+-- Remap 'k' to go DOWN
+vim.keymap.set({ "n", "v" }, "k", "j", { noremap = true, desc = "Move cursor down" })
